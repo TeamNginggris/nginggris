@@ -9,7 +9,7 @@
 
                 <div class="panel-body" align="center">
                   <div class="col-xs-12 col-md-12">
-                      <img src="{{ url('/') }}/img/quest/camera-icon.png" alt="Image" class="img-circle" width="140px"><br><br>
+                      <img src="{{ url('/') }}/img/quest/gift.jpg" alt="Image" class="img-circle" width="140px"><br><br>
                   </div>
                   <h1>Selamat!!</h1>
                   <h3>Anda Mendapatkan Voucer diskon 15 % di KFC.</h3>

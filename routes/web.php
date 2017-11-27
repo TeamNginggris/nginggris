@@ -23,6 +23,13 @@ Route::get('/selesai', function () {
     return view('selesai');
 });
 
+Route::group(['namespace' => 'Admin'], function(){
+	Route::get('admin/home', 'HomeController@index')->name('admin.home');
+	// Admin Auth Routes
+	Route::get('admin-login', 'Auth\LoginController@showLoginForm')->name('admin.login');
+	Route::post('admin-login', 'Auth\LoginController@login');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
