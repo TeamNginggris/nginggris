@@ -28,6 +28,10 @@ Route::group(['namespace' => 'Admin'], function(){
 	// Admin Auth Routes
 	Route::get('admin-login', 'Auth\LoginController@showLoginForm')->name('admin.login');
 	Route::post('admin-login', 'Auth\LoginController@login');
+	// Users Role
+	Route::resource('admin/users', 'UsersController');
+	// Quest Role
+	Route::resource('admin/quest', 'QuestController');
 });
 
 Auth::routes();

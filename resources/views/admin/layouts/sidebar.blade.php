@@ -34,12 +34,12 @@
           </span>
         </a>
           <ul class="treeview-menu">
-            <li><a href="#!"><i class="fa fa-circle-o"></i> All Question</a></li>
+            <li><a href="{{ route('quest.index') }}"><i class="fa fa-circle-o"></i> All Question</a></li>
             <li><a href="#!"><i class="fa fa-circle-o"></i> Category</a></li>
           </ul>
         </li>
         
-        <li><a href="#!"><i class="fa fa-users"></i><span>Users</span></a></li>
+        <li><a href="{{ route('users.index') }}"><i class="fa fa-users"></i><span>Users</span></a></li>
         
       </ul>
     </section>
